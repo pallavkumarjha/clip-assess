@@ -1,14 +1,6 @@
 const crypto = require("crypto");
 const { deterministicPartitionKey } = require("./dpk");
 
-// describe("deterministicPartitionKey", () => {
-//   it("Returns the literal '0' when given no input", () => {
-//     const trivialKey = deterministicPartitionKey();
-//     expect(trivialKey).toBe("0");
-//   });
-// });
-
-
 describe("deterministicPartitionKey", () => {
 
   const TRIVIAL_PARTITION_KEY = "0";
