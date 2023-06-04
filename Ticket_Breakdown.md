@@ -29,7 +29,6 @@ Acceptance Criteria:
 - The custom ids are used instead of the internal database ids in the generated reports.
 - The system provides appropriate validation and error handling for custom ids to ensure uniqueness and data integrity.
 - The existing functionality of generating reports remains intact.
-- Time/Effort Estimate: 5-8 hours
 
 Implementation Details:
 
@@ -38,7 +37,7 @@ Implementation Details:
 - Implement backend logic to validate and store the custom ids in the database.
 - Update the report generation code to use the custom ids instead of internal database ids.
 
-
+Time/Effort Estimate: 8-12 hours
 
 **Ticket 2: Update getShiftsByFacility to include custom Agent ids**
 
@@ -50,14 +49,13 @@ Acceptance Criteria:
 - The `getShiftsByFacility` function returns all Shifts worked by the Facility, including the custom ids of the assigned Agents.
 - The custom ids are retrieved from the database and included in the result set.
 - The existing functionality of `getShiftsByFacility` remains intact.
-- Time/Effort Estimate: 3-5 hours
 
 Implementation Details:
 
 - Modify the `getShiftsByFacility` function to fetch the custom ids of the assigned Agents from the database.
 - Include the custom ids in the metadata returned by the function.
 
-
+Time/Effort Estimate: 5-7 hours
 
 **Ticket 3: Update generateReport to use custom Agent ids**
 
@@ -69,14 +67,14 @@ Acceptance Criteria:
 - The `generateReport` function generates PDF reports using the custom ids of Agents.
 - The custom ids are fetched from the database and used in the report generation process.
 - The existing functionality of `generateReport` remains intact.
-- Time/Effort Estimate: 3-5 hours
+
 
 Implementation Details:
 
 - Modify the `generateReport` function to fetch the custom ids of Agents from the database.
 - Update the report generation code to utilize the custom ids instead of the internal database ids.
 
-
+Time/Effort Estimate: 5-7 hours
 
 **Ticket 4 (Optional): Provide UI for Facilities to manage custom Agent ids**
 
@@ -88,10 +86,12 @@ Acceptance Criteria:
 - Facilities have a user interface to add, edit, and delete custom ids for Agents.
 - The interface provides appropriate validation and error handling for custom ids to ensure uniqueness  and data integrity.
 - Changes to custom ids reflect in the database and are used in the reports generated.
-- Time/Effort Estimate: 6-10 hours
+
 
 Implementation Details:
 
 - Design and develop a user interface for Facilities to manage custom ids.
 - Implement frontend logic for adding, editing, and deleting custom ids.
 - Update backend logic to handle custom id modifications and ensure data consistency.
+
+Time/Effort Estimate: 6-10 hours
